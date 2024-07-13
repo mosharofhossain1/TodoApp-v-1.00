@@ -19,15 +19,20 @@ const inputHandler = (e)=>{
     li.style.borderRadius = '5px'; 
     li.classList.add('liStyles');
      todoList.append(li);
+     inputField.value = '';
     }
-    inputField.value = '';
+    else{
+        window.alert('😎Hey Man First Add Task And Then Add New Task Click Or Enter Button Press 💖✔😎')
+    }
 }
 
 const enterHandler = (e)=>{
    if(e.key == 'Enter'){
        inputHandler()
 }
+
 }
+
 const deleteHandler = (e)=>{
     const targetEl = e.target;
    if(targetEl.id === 'delete'){
